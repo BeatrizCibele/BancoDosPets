@@ -1,0 +1,16 @@
+﻿@model Pet  
+<br />
+<br />
+<br />
+<h1>Você escolheu @Model.Nome</h1>
+<br />
+<br />
+<div class="container">
+    <div class="jumbotron">
+        <img src=" @Model.ImagemThumbnail" />
+        <p>Sexo: @Model.Sexo</p>
+        <p>Idade: @Model.Idade</p>
+        <p><b>O que aconteceu comigo: @Model.DescricaoCurta</b></p>
+        <p>@Model.DescricaoLonga</p>
+    </div>   
+</div>

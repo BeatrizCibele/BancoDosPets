@@ -1,0 +1,65 @@
+﻿@using BancoDosPets.Models
+@model IEnumerable<Pet>
+<br />
+<br />
+<br />
+
+@{
+    int rowTotal = 0;
+    int rowCounter = 0;
+
+    foreach (var item in Model)
+    {
+        rowTotal++;
+        if (rowCounter == 0)
+        {
+            @Html.Raw("<div class='row'>");
+        }
+
+        <div class="col-md-4">
+            <div class="item">
+                <img src="@item.ImagemUrl" />
+                <h4>Nome: @item.Nome</h4>
+                <p>Idade: @item.Idade ano(s)</p>
+                <p>Valor Pretendido: @item.ValorEsperado.ToString("c")</p>
+                <p>Valor Recebido: @item.ValorRecebido.ToString("c")</p>
+                
+                <p>
+                    @*<a asp-controller="PetDetalhe" asp-action="Detalhar" class="btn btn-default">Conheça minha causa</a>*@
+                    <a class="btn btn-primary" id="cartButton" asp-controller="Pet" asp-action="PetDetalhe" asp-route-petId="@item.PetId">
+                        Conheça minha história
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        @if(rowCounter == 2 )
+        {
+            rowCounter = 0;
+            @Html.Raw("</div>");
+            
+        }
+        else
+        {
+            rowCounter++;
+        }
+    }
+}
+
+
+@*<div class="row">
+        <div class="col-md-12">
+
+            @foreach (var pet in Model)
+            {
+                <div class="col-3">
+                    <img src="@pet.ImagemUrl" />
+                    <h4>Nome: @pet.Nome</h4>
+                    <p>Idade: @pet.Idade ano(s)</p>
+                    <p>Valor Pretendido: @pet.ValorEsperado.ToString("c")</p>
+                    <p>Valor Recebido: @pet.ValorRecebido.ToString("c")</p>
+                </div>
+            }
+        </div>
+
+    </div>*@
