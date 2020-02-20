@@ -407,7 +407,6 @@ C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\BancoDoente.RazorCoreGenerate.cache
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Pet\Index.cshtml.g.cs
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Pet\List.cshtml.g.cs
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Pet\PetDetalhe.cshtml.g.cs
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -420,3 +419,6 @@ C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\BancoDoente.csproj.CopyComplete
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\BancoDoente.dll
 C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\BancoDoente.pdb
+C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Pet\Editpet.cshtml.g.cs
+C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Pet\AdicionarPetAoBanco.cshtml.g.cs
+C:\Users\Beatriz Cibele\source\repos\BancoDosPets-master\BancoDosPets\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sobre.cshtml.g.cs

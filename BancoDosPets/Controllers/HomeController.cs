@@ -27,6 +27,10 @@ namespace BancoDosPets.Controllers
         {
             return View();
         }
+        public IActionResult Sobre()
+        {
+            return View();
+        }
 
        
         

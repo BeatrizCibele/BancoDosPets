@@ -1,0 +1,77 @@
+﻿@model BancoDosPets.Models.Pet
+
+
+@{
+    ViewData["Title"] = "Editpet";
+}
+
+<h1>Editpet</h1>
+
+<h4>Pet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editpet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PetId" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sexo" class="control-label"></label>
+                <input asp-for="Sexo" class="form-control" />
+                <span asp-validation-for="Sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idade" class="control-label"></label>
+                <input asp-for="Idade" class="form-control" />
+                <span asp-validation-for="Idade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorEsperado" class="control-label"></label>
+                <input asp-for="ValorEsperado" class="form-control" />
+                <span asp-validation-for="ValorEsperado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorRecebido" class="control-label"></label>
+                <input asp-for="ValorRecebido" class="form-control" />
+                <span asp-validation-for="ValorRecebido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoCurta" class="control-label"></label>
+                <input asp-for="DescricaoCurta" class="form-control" />
+                <span asp-validation-for="DescricaoCurta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoLonga" class="control-label"></label>
+                <input asp-for="DescricaoLonga" class="form-control" />
+                <span asp-validation-for="DescricaoLonga" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagemUrl" class="control-label"></label>
+                <input asp-for="ImagemUrl" class="form-control" />
+                <span asp-validation-for="ImagemUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagemThumbnail" class="control-label"></label>
+                <input asp-for="ImagemThumbnail" class="form-control" />
+                <span asp-validation-for="ImagemThumbnail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoriaId" class="control-label"></label>
+                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
+                <span asp-validation-for="CategoriaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" asp-controller="Pet" asp-action="SalvarEdicao" asp-route-petId="@Model.PetId" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Pet" asp-action="Index">Voltar para lista de pets</a>
+</div>
+

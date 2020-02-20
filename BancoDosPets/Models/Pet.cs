@@ -16,7 +16,7 @@ namespace BancoDosPets.Models
         public string Nome { get; set; }
 
         [StringLength(1)]
-        [Required(ErrorMessage = "Digite o sexo do pet")]
+        [Required(ErrorMessage = "Digite o sexo do pet M ou F")]
         [Display(Name = "Sexo")]
         public string Sexo { get; set; }        
         public int Idade { get; set; }

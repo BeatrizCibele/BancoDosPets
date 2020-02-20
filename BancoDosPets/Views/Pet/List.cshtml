@@ -29,6 +29,9 @@
                     <a class="btn btn-primary" id="cartButton" asp-controller="Pet" asp-action="PetDetalhe" asp-route-petId="@item.PetId">
                         Conheça minha história
                     </a>
+                    <a class="btn btn-outline-info btn-sm" id="cardButton" asp-controller="Pet" asp-action="EditPet" asp-route-petId="@item.PetId">
+                        Editar
+                    </a>
                 </p>
             </div>
         </div>
